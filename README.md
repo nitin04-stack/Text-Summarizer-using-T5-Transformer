@@ -1,3 +1,13 @@
+---
+title: Text Summarizer Using T5
+emoji: 📝
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_file: app.py
+pinned: false
+---
+
 # Text Summarizer using T5 Transformer
 A deep learning-based text summarization web application built with a fine-tuned T5 transformer model, served via FastAPI with a clean web interface.
 
