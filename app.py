@@ -43,7 +43,7 @@ def summarize_dailogue(dialogue:str)->str:
   dialogue = "summarize: " + dialogue
 
   # tokenize
-  inputs = tokenzier(
+  inputs = tokenizer(
       dialogue,
       padding = "max_length",
       max_length = 512,
@@ -62,7 +62,7 @@ def summarize_dailogue(dialogue:str)->str:
   )
 
   # token_ids convert to summary
-  summary = tokenzier.decode(targets[0],skip_special_tokens = True)
+  summary = tokenizer.decode(targets[0],skip_special_tokens = True)
   return summary
 
 # API endpoints
