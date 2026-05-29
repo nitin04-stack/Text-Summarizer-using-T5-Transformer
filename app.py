@@ -11,7 +11,7 @@ import re
 app = FastAPI(title="Text Summarizer App",description="Text Summarization using T5",version="1.0")
 
 # model & tokenizer
-model = T5ForConditionalGeneration.from_pretrained("nitinn04/text-summarizer-t5")
+model = T5ForConditionalGeneration.from_pretrained("nitinn04/text-summarizer-t5",torch_dtype = torch.float16,low_cpu_mem_usage = True)
 tokenizer = T5Tokenizer.from_pretrained("nitinn04/text-summarizer-t5")
 
 # device
