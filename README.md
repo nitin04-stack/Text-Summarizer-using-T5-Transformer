@@ -12,7 +12,7 @@ pinned: false
 A deep learning-based text summarization web application built with a fine-tuned T5 transformer model, served via FastAPI with a clean web interface.
 
 ## Links
-- 🌐 **Live Demo:** [text-summarizer.onrender.com](https://text-summarizer.onrender.com)
+- 🌐 **Live Demo:** [text-summarizer.huggingface](https://nitinn04-text-summarizer-using-t5-transformer.hf.space)
 - 🤗 **Model on HuggingFace:** [nitinn04/text-summarizer-t5](https://huggingface.co/nitinn04/text-summarizer-t5)
 - 📓 **Training Notebook:** Available in same repository
 
@@ -29,7 +29,7 @@ A deep learning-based text summarization web application built with a fine-tuned
 | Model | T5ForConditionalGeneration (HuggingFace) |
 | Backend | FastAPI + Uvicorn |
 | Frontend | HTML + Jinja2 Templates |
-| Deployment | Render.com |
+| Deployment | Huggingface.co |
 | Model Hosting | HuggingFace Hub |
 
 ## How to Run Locally
@@ -59,7 +59,7 @@ Text-Summarizer/
 ├── app.py                  # FastAPI backend
 ├── index.html              # Frontend UI
 ├── requirements.txt        # Dependencies
-├── Procfile                # Render deployment config
+├── Docker                  
 └── training_notebook.ipynb # Model training (Google Colab)
 ```
 
