@@ -12,7 +12,7 @@ app = FastAPI(title="Text Summarizer App",description="Text Summarization using 
 
 # model & tokenizer
 model = T5ForConditionalGeneration.from_pretrained("nitinn04/text-summarizer-t5")
-tokenizer = T5Tokenizer.from_pretrained("nitinn04/text-summarizer-t5")
+tokenizer = AutoTokenizer.from_pretrained("nitinn04/text-summarizer-t5")
 
 # device
 if torch.backends.mps.is_available():
